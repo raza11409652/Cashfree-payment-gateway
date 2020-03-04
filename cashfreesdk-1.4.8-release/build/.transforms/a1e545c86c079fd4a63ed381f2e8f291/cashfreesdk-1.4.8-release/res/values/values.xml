@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="CFUPI_buttonText_noUpiApp">Click to go back</string>
+    <string name="CFUPI_text_noUpiApp">Install an UPI enabled app to continue</string>
+    <string name="CFUPI_text_upiAppExists">Choose an UPI app to pay with</string>
+    <string name="app_name">Cashfree</string>
+    <string name="close">close</string>
+    <string name="currency_code_upi">INR</string>
+    <string name="endpoint_amazon_init_local">http://626b6e45.ngrok.io/billpay/amazonpayment/initiatepayment</string>
+    <string name="endpoint_amazon_init_prod">https://www.cashfree.com/amazonpayment/initiatepayment</string>
+    <string name="endpoint_amazon_init_test">https://test.cashfree.com/billpay/amazonpayment/initiatepayment</string>
+    <string name="endpoint_amazon_order_local">http://626b6e45.ngrok.io/billpay/amazonpayment/processpayment</string>
+    <string name="endpoint_amazon_order_prod">https://www.cashfree.com/amazonpayment/processpayment</string>
+    <string name="endpoint_amazon_order_test">https://test.cashfree.com/billpay/amazonpayment/processpayment</string>
+    <string name="endpoint_amazon_verify_local">http://626b6e45.ngrok.io/billpay/amazonpayment/checkstatus</string>
+    <string name="endpoint_amazon_verify_prod">https://www.cashfree.com/amazonpayment/checkstatus</string>
+    <string name="endpoint_amazon_verify_test">https://test.cashfree.com/billpay/amazonpayment/checkstatus</string>
+    <string name="endpoint_local">http://192.168.19.137/billpay/checkout/post/submit</string>
+    <string name="endpoint_prod">https://www.cashfree.com/checkout/post/submit</string>
+    <string name="endpoint_test">https://test.cashfree.com/billpay/checkout/post/submit</string>
+    <string name="endpoint_upi_prod">https://www.cashfree.com/checkout/post/upi-submit</string>
+    <string name="endpoint_upi_test">https://test.cashfree.com/billpay/checkout/post/upi-submit</string>
+    <string name="endpoint_upi_verify_prod">https://www.cashfree.com/upi/checkStatusPayRequest</string>
+    <string name="endpoint_upi_verify_test">https://test.cashfree.com/billpay/upi/checkStatusPayRequest</string>
+    <string name="payee_MCC_upi">1520</string>
+    <string name="payee_address_upi">cashfree@yesbank</string>
+    <string name="payee_name_upi">Cashfree</string>
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+</resources>

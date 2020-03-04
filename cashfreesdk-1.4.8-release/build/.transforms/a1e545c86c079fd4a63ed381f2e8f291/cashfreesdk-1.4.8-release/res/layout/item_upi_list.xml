@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_margin="15dp"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:contentDescription="Logo" />
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logoIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:text="App Name"
+        android:layout_toEndOf="@+id/logoIcon" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gocashfree.cashfreesdk"
+    android:versionCode="5"
+    android:versionName="1.4.8" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:node="replace" >
+        <activity
+            android:name="com.gocashfree.cashfreesdk.CFPaymentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.gocashfree.cashfreesdk.CFUPIPaymentActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.gocashfree.cashfreesdk.AmazonPayActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" >
+        </activity>
+        <activity
+            android:name="com.gocashfree.cashfreesdk.GooglePayActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.gocashfree.cashfreesdk.CFPhonePayActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+    </application>
+
+</manifest>

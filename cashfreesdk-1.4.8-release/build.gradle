@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('cashfreesdk-1.4.8-release.aar'))

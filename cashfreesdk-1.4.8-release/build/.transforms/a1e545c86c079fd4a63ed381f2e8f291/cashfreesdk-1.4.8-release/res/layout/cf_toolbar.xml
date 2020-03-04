@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@+id/cf_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    android:background="#784BD2"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/amountTV"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/cancel_button"
+            android:layout_toStartOf="@+id/cancel_button"
+            style="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/white"
+            android:shadowColor="#70000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <TextView
+            android:id="@+id/orderIdTV"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/amountTV"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:shadowColor="#70000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:maxLines="2"
+            style="@android:style/TextAppearance.Medium" />
+
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close"
+            android:padding="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/close"
+            android:layout_marginEnd="16dp" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

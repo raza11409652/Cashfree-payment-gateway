@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cashfree_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gocashfree.cashfreesdk.CFPaymentActivity">
+
+    <include
+        layout="@layout/cf_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress_web_view"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_margin="0dp"
+        android:max="100"
+        android:padding="0dp"
+        android:visibility="gone"
+        android:layout_below="@id/cf_toolbar"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/progress_web_view"
+        android:id="@+id/web_view_main"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
